@@ -1,0 +1,13 @@
+{
+  "pages": [
+    {
+      "slug": "/"
+    },
+    {
+      "slug": "/services"
+    },
+    {
+      "slug": "/about"
+    }
+  ]
+}
