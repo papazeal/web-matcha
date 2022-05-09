@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useUserStore } from '~/stores/user'
+import { useSiteStore } from '~/stores/site'
 
 const user = useUserStore()
 const name = $ref(user.savedName)

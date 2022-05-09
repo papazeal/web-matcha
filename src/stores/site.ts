@@ -1,9 +1,12 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
+import * as data from '~/data/data.json'
 
-export const useUserStore = defineStore('user', () => {
+export const useSiteStore = defineStore('site', () => {
   /**
    * Current name of the user.
    */
+  const pages = ref(data.pages)
+  const options = ref(data.options)
   const savedName = ref('')
   const previousNames = ref(new Set<string>())
 
@@ -24,6 +27,8 @@ export const useUserStore = defineStore('user', () => {
   }
 
   return {
+    options,
+    pages,
     setNewName,
     otherNames,
     savedName,
@@ -31,4 +36,4 @@ export const useUserStore = defineStore('user', () => {
 })
 
 if (import.meta.hot)
-  import.meta.hot.accept(acceptHMRUpdate(useUserStore, import.meta.hot))
+  import.meta.hot.accept(acceptHMRUpdate(useSiteStore, import.meta.hot))

@@ -6,11 +6,11 @@ const props = defineProps<{ all: string }>()
 const pageData = computed(() => data.pages.filter(page => page.slug === props.all[0] || '')[0])
 
 useHead({
-  title: props.all,
+  title: 'title',
   meta: [
     {
       name: 'description',
-      content: 'Website description',
+      content: '',
     },
   ],
 })
@@ -19,7 +19,6 @@ useHead({
 <template>
   <div>
     <div hidden>
-      <img src="../data/images/bb1.jpg">
       <div>page: {{ props.all }}</div>
       <div>content: {{ props.all }}</div>
       {{ pageData }}
@@ -32,7 +31,7 @@ useHead({
       <p>Biscuit biscuit donut toffee candy chocolate bar croissant tart. Halvah sesame snaps powder soufflé soufflé tart wafer. Topping croissant pastry icing dessert sesame snaps brownie tart bonbon.</p>
       <div my-20 />
       <div>
-        <img src="https://cdn-icons-png.flaticon.com/512/4105/4105448.png" w-60>
+        <img src="https://cdn-icons-png.flaticon.com/512/4193/4193312.png" w-60>
         <h3>Feature Rich</h3>
         <p>Muffin fruitcake toffee shortbread cake danish. Biscuit biscuit donut toffee candy chocolate bar croissant tart. Halvah sesame snaps powder soufflé soufflé tart wafer.</p>
         <p>
@@ -41,7 +40,7 @@ useHead({
       </div>
       <div my-30 />
       <div>
-        <img src="https://cdn-icons-png.flaticon.com/512/4105/4105452.png" w-60 inline-block>
+        <img src="https://cdn-icons-png.flaticon.com/512/4193/4193320.png" w-60 inline-block>
         <h3>Support Center</h3>
         <p>Muffin fruitcake toffee shortbread cake danish. Biscuit biscuit donut toffee candy chocolate bar croissant tart. Halvah sesame snaps powder soufflé soufflé tart wafer.</p>
         <p>

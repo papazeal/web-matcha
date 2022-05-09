@@ -1,4 +1,14 @@
 {
+  "options": {
+    "title": {
+      "value": "Web Matcha",
+      "type": "text"
+    },
+    "description": {
+      "value": "website that rock",
+      "type": "text"
+    }
+  },
   "pages": [
     {
       "title": "Home",
