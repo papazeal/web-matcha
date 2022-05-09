@@ -9,7 +9,7 @@ const router = useRouter()
     <header flex>
       <div>
         <RouterLink to="/">
-          <div flex mt-10 sm:mt-0>
+          <div flex mt-6 sm:mt-0>
             <img src="https://api.iconify.design/twemoji:bagel.svg?color=%23888888" mr-4 h-12>
             <div>
               <div text-2xl>
