@@ -7,7 +7,7 @@ import '@unocss/reset/tailwind.css'
 import './styles/main.css'
 import 'uno.css'
 
-import * as data from './data/data.json'
+import * as data from '~/data/data.json'
 
 const routes = setupLayouts(generatedRoutes)
 

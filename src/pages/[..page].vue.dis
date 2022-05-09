@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
+import * as data from '~/data/data.json'
 
 const props = defineProps<{ page: string }>()
+const pageData = data.pages.filter(page => page.slug == '/')
 
 useHead({
   title: props.page,
@@ -15,9 +17,10 @@ useHead({
 </script>
 
 <template>
-  <div max-w-sm mx-auto>
+  <div>
     <img src="../data/images/bb1.jpg">
     <div>page: {{ props.page }}</div>
     <div>content: {{ props.page }}</div>
+    {{ pageData }}
   </div>
 </template>

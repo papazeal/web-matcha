@@ -1,13 +1,16 @@
 {
   "pages": [
     {
-      "slug": "/"
+      "title": "Home",
+      "slug": ""
     },
     {
-      "slug": "/services"
+      "title": "Services",
+      "slug": "services"
     },
     {
-      "slug": "/about"
+      "title": "About",
+      "slug": "about"
     }
   ]
 }
