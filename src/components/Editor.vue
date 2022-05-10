@@ -36,7 +36,7 @@ const pages = siteStore.pages
           <input v-model="options.description.value" type="text">
         </div>
       </div>
-      <div absolute bottom-0 w-full>
+      <div absolute bottom-0 w-full hidden>
         <div bg-blue-600 text-white px-4 py-2 rounded-lg w-full>
           save
         </div>
