@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import * as data from '~/data/data.json'
 import { useSiteStore } from '~/stores/site'
 
 const router = useRouter()
